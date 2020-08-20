@@ -305,6 +305,25 @@ a {
   /* animation: ease-in; */
   color: #000;
 }
+.project-container {
+  display: flex;
+  flex-grow: 1;
+  height: 340px;
+  width: 100%;
+  margin-bottom: 80px;
+  transition: all 0.4s ease;
+}.project-container .project-preview {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+a:-webkit-any-link {
+  /* color: -webkit-link; */
+  cursor: pointer;
+}
+
 
 footer{
   background-color: #24c5a0;
