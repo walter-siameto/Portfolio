@@ -11,6 +11,7 @@ body {
   line-height:1.5;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #fdfdfd;
+  letter-spacing: 1px;
 }
 .grad-bar {
   width: 100%;
@@ -142,6 +143,7 @@ h5{
   transform: rotate(45deg) translate(-5px,6-px);
 }
 /* end navbar */
+
 .bannerbg{
   background-image: url(assets/banner.png);
   background-position: center;
@@ -167,6 +169,7 @@ h5{
   margin-bottom: 30px;
   font-weight: 400;
   line-height: 26px;
+  letter-spacing: 3px;
 }
 
 hr{
@@ -238,13 +241,70 @@ padding: 10px;
 }
 
 
-.part3 {
+/* .part3 {
   background: #fff;
   padding: 20px;
   margin-top: 40px;
+} */
+.holder{
+  background-color:#24c5a0;
+  margin-bottom: 30px;
+}
+.holder p{
+  color: #000;
+  letter-spacing: 1px;
+  margin-left: 50px;
+
 }
 
+h6{
+color: #000;
+font-size: 22px;
+padding: 40px 20px 30px 20px;
+letter-spacing: 3px;
+}
 
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #4555E6;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.button {
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 11px 16px;
+  background-color: #19191A;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.button:hover{
+  background-color: #fff;
+  border: 2px #000 solid;
+  border-radius: 8px;
+  /* animation: ease-in; */
+  color: #000;
+}
 
 footer{
   background-color: #24c5a0;
