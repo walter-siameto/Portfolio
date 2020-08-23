@@ -52,6 +52,7 @@ nav{
 
 .nav-links a:hover{
   color: #24c5a0;
+  border-bottom: 2px dotted #1ba49c;
   }
 
 .logo{
@@ -142,6 +143,10 @@ h5{
 .toggle .line3{
   transform: rotate(45deg) translate(-5px,6-px);
 }
+
+
+
+
 /* end navbar */
 
 .bannerbg{
@@ -305,28 +310,10 @@ a {
   /* animation: ease-in; */
   color: #000;
 }
-.project-container {
-  display: flex;
-  flex-grow: 1;
-  height: 340px;
-  width: 100%;
-  margin-bottom: 80px;
-  transition: all 0.4s ease;
-}.project-container .project-preview {
-  flex-basis: 50%;
-  flex-shrink: 0;
-  overflow: hidden;
-  position: relative;
-}
-
-a:-webkit-any-link {
-  /* color: -webkit-link; */
-  cursor: pointer;
-}
 
 
 footer{
-  background-color: #24c5a0;
+  background-color: #2A3A4D;
   padding: 20px;
   text-align: center;
   color: #fff;
