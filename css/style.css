@@ -312,7 +312,11 @@ a {
   /* animation: ease-in; */
   color: #000;
 }
+ .icons{
+   text-align: center;
+   font-size: 20px;
 
+ }
 /* start portfolio */
 
 .pic{
