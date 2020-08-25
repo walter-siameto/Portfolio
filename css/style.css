@@ -11,7 +11,9 @@ body {
   line-height:1.5;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #fdfdfd;
-  letter-spacing: 1px;
+  letter-spacing: 1px;color: #525d68;
+}
+
 }
 .grad-bar {
   width: 100%;
@@ -311,7 +313,118 @@ a {
   color: #000;
 }
 
+/* start portfolio */
 
+.pic{
+  width:350px;
+  height:297px;
+  background: url(assets/respo.png) no-repeat;
+}
+.pic1{
+  width:350px;
+  height:297px;
+  background: url(assets/mypic.png) no-repeat;
+}
+.pic2{
+  width:350px;
+  height:297px;
+  background: url(assets/aboutme.jpeg)no-repeat;
+}
+
+.pic3{
+  width:350px;
+  height:297px;
+  background: url(assets/banner.png) no-repeat;
+}
+.pic4{
+  width:350px;
+  height:297px;
+  background: url(assets/respo.png) no-repeat;
+}
+.pic5{
+  width:350px;
+  height:297px;
+  background: url(assets/mypic.png) no-repeat;
+}
+.text{
+  width:350px;
+  height:297px;
+  background:#414043;
+  opacity:0;
+  border-radius: 10px;
+
+}
+.text p{
+  text-align: center;
+  font-size: 12px;
+}
+.text a{
+  margin-top: 50px;
+}
+.pic:hover .text{
+  opacity:1.0;
+  text-align: center;
+  color:#fff;
+  border-radius: 10px;
+  font-size:20px;
+  font-weight:700;
+  padding:30px;
+  transition: 0.5s ease-in;
+}
+
+.pic1:hover .text{
+  opacity:1.0;
+  text-align: center;
+  color:#fff;
+  border-radius: 10px;
+  font-size:20px;
+  font-weight:700;
+  padding:30px;
+  transition: 0.5s ease-in;
+}
+
+.pic2:hover .text{
+  opacity:1.0;
+  text-align: center;
+  color:#fff;
+  border-radius: 10px;
+  font-size:20px;
+  font-weight:700;
+  padding:30px;
+  transition: 0.5s ease-in;
+}
+
+.pic3:hover .text{
+  opacity:1.0;
+  text-align: center;
+  color:#fff;
+  border-radius: 10px;
+  font-size:20px;
+  font-weight:700;
+  padding:30px;
+  transition: 0.5s ease-in;
+}
+.pic4:hover .text{
+  opacity:1.0;
+  text-align: center;
+  color:#fff;
+  border-radius: 10px;
+  font-size:20px;
+  font-weight:700;
+  padding:30px;
+  transition: 0.5s ease-in;
+}
+.pic5:hover .text{
+  opacity:1.0;
+  text-align: center;
+  color:#fff;
+  border-radius: 10px;
+  font-size:20px;
+  font-weight:700;
+  padding:30px;
+  transition: 0.5s ease-in;
+}
+/* end portfolio */
 footer{
   background-color: #2A3A4D;
   padding: 20px;
@@ -319,6 +432,7 @@ footer{
   color: #fff;
 }
 
+/* //responsive// */
 img {
   max-width: 100%; height: auto;
   }
