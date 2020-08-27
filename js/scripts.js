@@ -29,6 +29,18 @@ navSlide();
   
 }
 
+window.onload = function() {
+const moreText = "Read more";
+const lessText = "Read less";
+const moreButton = $("button.readmorebtn");
+
+moreButton.click(function() {
+  const $this = $(this);
+  $this.text($this.text() == moreText ? lessText : moreText).next(".more").slideToggle("fast");
+});
+}
+
+
 
 
 // window.onload = function() {

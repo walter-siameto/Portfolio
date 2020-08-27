@@ -14,7 +14,7 @@ body {
   letter-spacing: 1px;color: #525d68;
 }
 
-}
+
 .grad-bar {
   width: 100%;
   height: 3px;
@@ -40,6 +40,7 @@ nav{
   justify-content: space-around;
   width: 40%;
 }
+
 .nav-links li{
   list-style: none;
 }
@@ -151,14 +152,16 @@ h5{
 
 /* end navbar */
 
+/* start about me info */
 .bannerbg{
   background-image: url(assets/banner.png);
   background-position: center;
   background-size: cover;
   margin-top: 50px;
-  margin-bottom: 50px;;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
 }
-/* start about me info */
+
 
  .abouttext {
   color: #63707e;
@@ -168,6 +171,122 @@ h5{
 
 } 
 
+.aboutmebg {
+  background-image: url(assets/slider10.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   min-height: 640px; 
+ 
+}
+
+.aboutmebg .col-md-4 {
+margin-top: 50px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+text-align: center;
+
+}
+
+.aboutmebg .col-md-4 p{
+  font: normal normal bold 27px/1.4em poppins-semibold,poppins,sans-serif;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.aboutmebg .col-md-4 h5{
+  font: normal normal bold 27px/1.4em ;
+  color: #000000;
+  padding-bottom: 20px;
+  letter-spacing: 5px;
+} 
+
+.aboutmebg .col-md-5 {
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  }
+
+  .aboutmebg .col-md-5 h1{
+    font: normal normal bold 100px/1.4em poppins-semibold,poppins,sans-serif;
+    color: #000000;
+    text-align: left;
+}
+
+.aboutmebg .col-md-5 h4{
+  font: normal normal bold 25px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.atagone{
+  border-radius: 38px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #24c5a0;
+  margin-right: 20px;
+}
+
+.atagone:hover{
+  border: 1px #24c5a0 solid;
+  border-radius: 38px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+}
+
+.atagtwo{
+  border-radius: 38px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  border: 1px #24c5a0 solid;
+  background-color: transparent;
+}
+
+.atagtwo:hover{
+  border-radius: 38px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000;
+  color: #fff;
+  background-color: #24c5a0;
+}
+
+.wrap p{
+  margin-top: 40px;
+  font: normal normal normal 17px/1.4em ;
+  color: #000000;
+} 
+
+.readmorebtn{
+  border-radius: 38px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+  border: 1px #24c5a0 solid;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+.readmorebtn:hover{
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+  background-color: #24c5a0;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* end aboutme */
 #section1{
   text-align: center;
   color: #63707e;
@@ -229,6 +348,7 @@ h2{
   font-size: 25px;
   padding: 25px;
   color: #fff;
+  
 }
 
 
@@ -315,6 +435,7 @@ a {
  .icons{
    text-align: center;
    font-size: 20px;
+   margin-bottom: 30px;
 
  }
 /* start portfolio */
@@ -324,6 +445,7 @@ a {
   height:297px;
   background: url(assets/respo.png) no-repeat;
 }
+
 .pic1{
   width:350px;
   height:297px;
@@ -348,7 +470,7 @@ a {
 .pic5{
   width:350px;
   height:297px;
-  background: url(assets/mypic.png) no-repeat;
+  background: url(assets/WhatsApp_Image_2020-08-20_at_04.33.36-removebg-preview.png) no-repeat;
 }
 .text{
   width:350px;
@@ -429,13 +551,19 @@ a {
   transition: 0.5s ease-in;
 }
 /* end portfolio */
+
 footer{
   background-color: #2A3A4D;
   padding: 20px;
   text-align: center;
   color: #fff;
 }
-
+/* animation */
+/* This changes all the animations globaly */
+:root {
+  --animate-duration: 2000ms;
+  --animate-delay: 0.9s;
+}
 /* //responsive// */
 img {
   max-width: 100%; height: auto;
