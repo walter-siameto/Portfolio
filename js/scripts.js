@@ -1,33 +1,17 @@
-window.onload=function(){
-const navSlide = () => {
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links li');
+$(document).ready(function() {
+  $('.btn-open-menu').click(function () {
+      $('header').addClass('open');
+  });
 
+  $('.link-menu').click(function () {
+      $('header').removeClass('open');
+  });
 
-
-burger.addEventListener('click', () => { 
-
-//toggle links
-  nav.classList.toggle('nav-active');
-
-//animate links
-navLinks.forEach((link, index) => {
-  if (link.style.animation) {
-    link.style.animation = '';
-  } 
-  else {link.style.animation = 'navLinkFade 0.5s ease fowards ${index/7 + 1.5}s';
-}
+  $('.btn-close-menu').click(function () {
+      $('header').removeClass('open');
+  });
 });
-//Burger Animation
-burger.classList.toggle('toggle');
 
-});
-}
-
-navSlide();
-  
-}
 
 window.onload = function() {
 const moreText = "Read more";
