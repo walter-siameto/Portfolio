@@ -1,7 +1,5 @@
 
 * {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -11,10 +9,12 @@ body {
   line-height:1.5;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #fdfdfd;
-  letter-spacing: 1px;color: #525d68;
+  letter-spacing: 1px;
   width: 100%;
   height: 100%;
-  
+	margin: 0;
+  padding: 0;
+  background-color: lightseagreen;
 }
 
 
@@ -26,6 +26,150 @@ body {
   	-webkit-animation: gradbar 15s ease infinite;
 	-moz-animation: gradbar 15s ease infinite;
 	animation: gradbar 15s ease infinite;
+}
+
+.page_title,
+.what_to_do {
+	font-weight: bolder;
+	text-align: center;
+  text-transform: uppercase;
+  border: 2px #23c5a0 solid;
+}
+
+/* PEN STYLES ========== */
+a,
+.side_menu {
+	-webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+/* MENU CONTAINER ----- */
+	.side_menu {
+		background: #24c5a0;
+		height: 100vh;
+		left: -250px;
+		position: fixed;
+		top: 0;
+		width: 250px;
+	}
+	.side_menu .container {
+		padding: 0 1em;
+	}
+
+/* HAMBURGER STYLES ----- */
+	.burger_box {
+		display: block;
+		float: right;
+		margin-right: -45px;
+	}
+	.burger_box a.menu-icon {
+		display: inline-block;
+		float: none;
+		height: 25px;
+		padding: 10px;
+		opacity: .5;
+		width: 25px;
+		z-index: 100;
+	}
+	.burger_box a.menu-icon:hover,
+	.burger_box a.menu-icon.opened {
+		opacity: 1;
+	}
+	.burger_box a.menu-icon.opened {
+		background: rgba(0,20,60,.9);
+	}
+	.burger_box .menu-icon_box {
+		display: inline-block;
+		height: 25px;
+		position: relative;
+		text-align: left;
+		width: 25px;
+	}
+	.burger_box .menu-icon_line {
+		background: #fff;
+		border-radius: 2px;
+		display: inline-block;
+		height: 3px;
+		position: absolute;
+		width: 100%;
+	}
+	.burger_box .menu-icon_line--1 {
+		top: 2px;
+	}
+	.burger_box .menu-icon_line--2 {
+		top: 10px;
+	}
+	.burger_box .menu-icon_line--3 {
+		top: 18px;
+	}
+	.burger_box .menu-icon_line--1 {
+		transition: top 200ms 250ms, transform 200ms;
+		-webkit-transition: top 200ms 250ms, -webkit-transform 200ms;
+	}
+	.burger_box .menu-icon_line--2 {
+		transition: opacity 0ms 300ms;
+		-webkit-transition: opacity 0ms 300ms;
+	}
+	.burger_box .menu-icon_line--3 {
+		transition: top 100ms 300ms, transform 200ms;
+		-webkit-transition: top 100ms 300ms, -webkit-transform 200ms;
+	}
+	.burger_box .menu-icon.opened .menu-icon_box {
+		transform: scale3d(0.9, 0.9, 0.9);
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+	}
+	.burger_box .menu-icon.opened .menu-icon_line {
+		top: 10px;
+	}
+	.burger_box .menu-icon.opened .menu-icon_line--1 {
+		transform: rotate3d(0, 0, 1, 45deg);
+		-webkit-transform: rotate3d(0, 0, 1, 45deg);
+		transition: top 100ms, transform 200ms 250ms;
+		-webkit-transition: top 100ms, -webkit-transform 200ms 250ms;
+	}
+	.burger_box .menu-icon.opened .menu-icon_line--2 {
+		opacity: 0;
+		transition: opacity 200ms;
+		-webkit-transition: opacity 200ms;
+	}
+	.burger_box .menu-icon.opened .menu-icon_line--3 {
+		transform: rotate3d(0, 0, 1, -45deg);
+		-webkit-transform: rotate3d(0, 0, 1, -45deg);
+		transition: top 200ms, transform 200ms 250ms;
+		-webkit-transition: top 200ms, -webkit-transform 200ms 250ms;
+	}
+
+/* STAGGER LIST ----- */
+	.list_load {
+		display: none;
+		list-style: none;
+		padding: 0;
+	}
+	.list_item {
+		margin-left: -20px;
+		opacity: 0;
+		-webkit-transition: all 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
+	}
+	.list_item a {
+		color: #fff;
+		display: block;
+		padding: 5px 10px;
+		text-decoration: none;
+	}
+	.list_item a:hover {
+		background: rgba(255,255,255,.2);
+	}
+
+/* .logo{
+  font: normal normal bold 20px/1.4em poppins-semibold,poppins,sans-serif;
+  color: #000000;
+  border: 3px #24c5a0 solid;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  float: left;
+  position: absolute;
 }
 
 
@@ -179,7 +323,7 @@ header.open .logo {
 header.open .header-content {
   left: 0;
   transition: 0.7s ease-in-out;
-}
+} */
 
 
 /* end navbar */
@@ -483,7 +627,7 @@ a {
 .pic1{
   width:350px;
   height:297px;
-  background: url(assets/mypic.png) no-repeat;
+  background: url(assets/slider1.jpg) no-repeat;
 }
 .pic2{
   width:350px;
@@ -504,7 +648,7 @@ a {
 .pic5{
   width:350px;
   height:297px;
-  background: url(assets/WhatsApp_Image_2020-08-20_at_04.33.36-removebg-preview.png) no-repeat;
+  background: url(assets/banner1.jpg) no-repeat;
 }
 .text{
   width:350px;
