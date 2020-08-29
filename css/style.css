@@ -8,13 +8,12 @@ body {
   font-size: 15px;
   line-height:1.5;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: #fdfdfd;
+  background-color:#f9f9f9;
   letter-spacing: 1px;
   width: 100%;
   height: 100%;
 	margin: 0;
   padding: 0;
-  background-color: lightseagreen;
 }
 
 
@@ -28,15 +27,14 @@ body {
 	animation: gradbar 15s ease infinite;
 }
 
-.page_title,
-.what_to_do {
-	font-weight: bolder;
+.page_title{
+	font-weight: 800;
 	text-align: center;
   text-transform: uppercase;
   border: 2px #23c5a0 solid;
+ letter-spacing: 1px;
 }
 
-/* PEN STYLES ========== */
 a,
 .side_menu {
 	-webkit-transition: all 300ms ease-in-out;
@@ -45,15 +43,17 @@ a,
 
 /* MENU CONTAINER ----- */
 	.side_menu {
-		background: #24c5a0;
+		background: #F5F6F7;
 		height: 100vh;
 		left: -250px;
 		position: fixed;
 		top: 0;
-		width: 250px;
-	}
+    width: 250px;
+    box-shadow: 0 0px 10px 0 rgba(0,0,0,0.2);
+  }
+  
 	.side_menu .container {
-		padding: 0 1em;
+		padding: 40px;
 	}
 
 /* HAMBURGER STYLES ----- */
@@ -67,7 +67,7 @@ a,
 		float: none;
 		height: 25px;
 		padding: 10px;
-		opacity: .5;
+		/* opacity: .5; */
 		width: 25px;
 		z-index: 100;
 	}
@@ -76,7 +76,7 @@ a,
 		opacity: 1;
 	}
 	.burger_box a.menu-icon.opened {
-		background: rgba(0,20,60,.9);
+		background: transparent;
 	}
 	.burger_box .menu-icon_box {
 		display: inline-block;
@@ -86,7 +86,7 @@ a,
 		width: 25px;
 	}
 	.burger_box .menu-icon_line {
-		background: #fff;
+		background: #000;
 		border-radius: 2px;
 		display: inline-block;
 		height: 3px;
@@ -152,15 +152,18 @@ a,
 		transition: all 200ms ease-in-out;
 	}
 	.list_item a {
-		color: #fff;
+		color: #000;
 		display: block;
-		padding: 5px 10px;
+		padding: 25px 10px;
 		text-decoration: none;
 	}
 	.list_item a:hover {
-		background: rgba(255,255,255,.2);
+    color: #24c5a0;
 	}
-
+  .list_item a:active {
+    color: #fff;
+    background-color: #24c5a0;
+	}
 /* .logo{
   font: normal normal bold 20px/1.4em poppins-semibold,poppins,sans-serif;
   color: #000000;
