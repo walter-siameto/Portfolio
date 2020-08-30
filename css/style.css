@@ -29,13 +29,6 @@ body {
 .resizebg{
 float: right;
 }
-.page_title{
-	font-weight: 800;
-	text-align: center;
-  text-transform: uppercase;
-  border: 2px #23c5a0 solid;
- letter-spacing: 1px;
-}
 
 a,
 .side_menu {
@@ -156,11 +149,14 @@ a,
 	.list_item a {
 		color: #000;
 		display: block;
-		padding: 25px 10px;
+		padding: 15px 10px;
 		text-decoration: none;
 	}
 	.list_item a:hover {
     color: #24c5a0;
+    background-color:#fff;
+    padding: 15px 10px;
+    display: block;
 	}
   .list_item a:active {
     color: #fff;
