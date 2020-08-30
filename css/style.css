@@ -26,7 +26,9 @@ body {
 	-moz-animation: gradbar 15s ease infinite;
 	animation: gradbar 15s ease infinite;
 }
-
+.resizebg{
+float: right;
+}
 .page_title{
 	font-weight: 800;
 	text-align: center;
