@@ -87,7 +87,8 @@ a,
 		height: 3px;
 		position: absolute;
 		width: 100%;
-	}
+  }
+ 
 	.burger_box .menu-icon_line--1 {
 		top: 2px;
 	}
