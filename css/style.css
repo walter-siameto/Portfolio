@@ -14,6 +14,7 @@ body {
   height: 100%;
 	margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -341,11 +342,99 @@ hr{
   line-height: 1.5;
   color: #fff;
   padding: 8px 18px;
-  border-radius: 30px;
+  border-radius: 10px;
   cursor: pointer;
   width: 200px;
   float: right;
 }
+
+.lets_talk_btn{
+  color: #fff;
+  background-color:#24c5a0;
+  background-image: -webkit-linear-gradient(left,#06BC9B,#1ba49c);
+  font-size: 18px;
+  border: 0 none;
+  line-height: 1.5;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.lets_talk_btn:hover{
+  color: #fff;
+  background-color:#24c5a0;
+  background-image: -webkit-linear-gradient(left,#06BC9B,#1ba49c);
+  font-size: 18px;
+  border: 0 none;
+  line-height: 1.5;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  text-decoration: none;
+}
+
+i{
+  padding: 6px 0px 8px 0px; 
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.lets_talk i{
+  padding: 6px 0px 8px 0px;
+}
+
+.lets_talk_row{ 
+  box-shadow: 4px 0px 4px 0px rgba(0,0,0,0.2);
+  background-color:rgb(245,246,247); padding: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.lets_talk{
+text-align: center;
+}
+
+.lets_talk h1{
+  font-weight: 900;
+  font-size: 40px;
+  color: #353740;
+}
+
+.lets_talk p{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #353740!important;
+  letter-spacing: 2px;
+}
+
+.mywork{
+  /* box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.2); */
+  margin-bottom: 20px;
+  padding: 40px;
+}
+
+.mywork_details button{
+text-decoration: none;
+padding: 10px 15px;
+border-radius: 38px;
+background-color: #24c5a0;
+color: #fff;
+border: #24c5a0 1px solid;
+}
+
+.mywork_details button:hover{
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 38px;
+  background-color: #24c5a0;
+  color: #fff;
+  border: #24c5a0 1px solid;
+  }
+  
 
 /* start services */
 
@@ -374,6 +463,7 @@ h2{
   background-color:rgb(245,246,247); 
   margin-bottom: 30px;
 }
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
@@ -465,12 +555,12 @@ a {
 .pic1{
   width:350px;
   height:297px;
-  background: url(assets/slider1.jpg) no-repeat;
+  background: url(assets/respo.png) no-repeat;
 }
 .pic2{
   width:350px;
   height:297px;
-  background: url(assets/aboutme.jpeg)no-repeat;
+  background: url(assets/respo.png)no-repeat;
 }
 
 .pic3{
@@ -486,7 +576,7 @@ a {
 .pic5{
   width:350px;
   height:297px;
-  background: url(assets/banner1.jpg) no-repeat;
+  background: url(assets/respo.png) no-repeat;
 }
 .text{
   width:350px;
